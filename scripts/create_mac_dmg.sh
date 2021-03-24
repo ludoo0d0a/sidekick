@@ -3,7 +3,7 @@ test -f sidekick.dmg && rm sidekick.dmg
 create-dmg \
   --volname "Sidekick Installer" \
   --volicon "./assets/sidekick_installer.icns" \
-  --background "./assets/dmg_background.png" \
+  --background "./assets/installer_background.png" \
   --window-pos 200 120 \
   --window-size 800 530 \
   --icon-size 130 \
