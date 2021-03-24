@@ -1,0 +1,80 @@
+on:
+  release:
+    types: 
+      - created
+
+jobs:
+  upload-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: stable
+
+      - name: Enable MacOs
+        run: flutter config --enable-macos-desktop
+      - name: Build macOS app
+        run: flutter build macos --release
+
+      - name: Create a dmg
+        run: |
+          echo "Install create-dmg"
+          brew install create-dmg
+
+          ./scripts/create_mac_dmg.sh
+          
+      - name: Get release
+        id: get_release
+        uses: bruceadams/get-release@v1.2.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{  steps.get_release.outputs.upload_url }}
+          asset_path: build/macos/Build/Products/Release/Sidekick.dmg
+          asset_name: Sidekick.dmg
+          asset_content_type: application/octet-stream
+    
+  upload-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: stable
+
+      - name: Enable Windows
+        run: flutter config --enable-windows-desktop
+      - name: Build macOS app
+        run: flutter build windows --release
+
+      - name: Create a dmg
+        run: |
+          echo "Install create-dmg"
+          brew install create-dmg
+
+          ./scripts/create_mac_dmg.sh
+          
+      - name: Get release
+        id: get_release
+        uses: bruceadams/get-release@v1.2.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{  steps.get_release.outputs.upload_url }}
+          asset_path: build/macos/Build/Products/Release/Sidekick.dmg
+          asset_name: Sidekick.dmg
+          asset_content_type: application/octet-stream
+        
