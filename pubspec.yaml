@@ -6,7 +6,7 @@ publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -22,9 +22,7 @@ dependencies:
   animations: ^2.0.0
   async: ^2.6.1
   date_time_format: ^2.0.1
-
   filesize: ^2.0.1
-
   flutter_hooks: ^0.17.0
   flutter_spinkit: ^5.0.0
   github: ^8.1.0
@@ -50,6 +48,7 @@ dependencies:
   file_selector_windows: ^0.0.2
   dio: ^4.0.0
   shared_preferences: ^2.0.6
+  collection: ^1.15.0
 
 dev_dependencies:
   flutter_test:

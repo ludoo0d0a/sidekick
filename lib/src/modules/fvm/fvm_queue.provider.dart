@@ -1,6 +1,5 @@
 import 'dart:collection';
 
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fvm/fvm.dart';
 import 'package:sidekick/generated/l10n.dart';
@@ -14,15 +13,25 @@ import '../settings/settings.provider.dart';
 import 'fvm.provider.dart';
 
 class FvmQueue {
-  QueueItem activeItem;
+  QueueItem? activeItem;
   final Queue<QueueItem> queue;
-  FvmQueue({@required this.activeItem, @required this.queue});
+  FvmQueue({
+    required this.activeItem,
+    required this.queue,
+  });
+
+  factory FvmQueue.empty() {
+    return FvmQueue(
+      activeItem: null,
+      queue: Queue(),
+    );
+  }
 
   bool get isEmpty {
     return queue.isEmpty;
   }
 
-  QueueItem get next {
+  QueueItem? get next {
     activeItem = queue.removeFirst();
     return activeItem;
   }
@@ -35,7 +44,10 @@ class FvmQueue {
 class QueueItem {
   final ReleaseDto version;
   final QueueAction action;
-  QueueItem({this.version, this.action});
+  QueueItem({
+    required this.version,
+    required this.action,
+  });
 }
 
 enum QueueAction {
@@ -55,9 +67,7 @@ final fvmQueueProvider = StateNotifierProvider<FvmQueueState, FvmQueue>((ref) {
 /// State of the FVM Queue
 class FvmQueueState extends StateNotifier<FvmQueue> {
   /// Constructor
-  FvmQueueState({@required this.ref}) : super(null) {
-    state = FvmQueue(activeItem: null, queue: Queue());
-  }
+  FvmQueueState({required this.ref}) : super(FvmQueue.empty());
 
   /// Provider ref to be used later
   final ProviderReference ref;
@@ -107,6 +117,8 @@ class FvmQueueState extends StateNotifier<FvmQueue> {
       if (activeItem != null) return;
       // Gets next item of the queue
       final item = state.next;
+
+      if (item == null) return;
       // Update queue
       state = state.update();
 
@@ -165,10 +177,16 @@ class FvmQueueState extends StateNotifier<FvmQueue> {
   Future<void> pinVersion(FlutterProject project, String version) async {
     await FVMClient.pinVersion(project, version);
     await ref.read(projectsProvider.notifier).reload(project);
-    notify(S.current.versionVersionPinnedToProjectname(version, project.name));
+    notify(S.current.versionVersionPinnedToProjectname(
+      version,
+      project.name,
+    ));
   }
 
-  Future<void> _addToQueue(ReleaseDto version, {QueueAction action}) async {
+  Future<void> _addToQueue(
+    ReleaseDto version, {
+    required QueueAction action,
+  }) async {
     state.queue.add(QueueItem(version: version, action: action));
     state = state.update();
     runQueue();
