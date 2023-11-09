@@ -1,0 +1,437 @@
+repo_name: ludoo0d0a/sidekick
+report_id: 381d95547a6475b50028f9c9be68cda5
+repo_type: Public
+timestamp: '2023-11-09T21:41:24+00:00'
+requested_by: aguilaair
+provider: github
+branch: main
+detected_tools_count: 34
+tools:
+- name: C lang
+  description: One of the most widely used programming languages of all time
+  website_url: http://en.wikipedia.org/wiki/C_(programming_language)
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source: Repo Metadata
+- name: C++
+  description: Has imperative, object-oriented and generic programming features, while
+    also providing the facilities for low level memory manipulation
+  website_url: http://www.cplusplus.com/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1049/cplusplus.png
+  detection_source: Repo Metadata
+- name: Dart
+  description: A new web programming language with libraries, a virtual machine, and
+    tools
+  website_url: https://www.dartlang.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1646/Twitter-02.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-02-18 14:44:26.000000000 Z
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source: Repo Metadata
+- name: Swift
+  description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
+  website_url: https://developer.apple.com/swift/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source: Repo Metadata
+- name: Flutter
+  description: Cross-platform mobile framework from Google
+  website_url: https://flutter.io/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Cross-Platform Mobile Development
+  image_url: https://img.stackshare.io/service/7180/flutter-mark-square-100.png
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: CMake
+  description: 'An open-source system that manages the build process '
+  website_url: http://www.cmake.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/2424/0UlUI_y1_400x400.jpg
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/release.yml"
+  last_updated_by: Eduardo
+  last_updated_on: 2021-03-25 18:47:42.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-02-18 14:44:26.000000000 Z
+- name: CocoaPods
+  description: A dependency manager for Swift and Objective-C Cocoa projects
+  website_url: https://cocoapods.org/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/service/2426/e1cbdef9d4b11484049a033886578e54_400x400.png
+  detection_source: macos/Podfile.lock
+  last_updated_by: leoafarias
+  last_updated_on: 2021-02-18 14:44:26.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source: Repo Metadata
+- name: async
+  description: Utility functions and classes related to the 'dart:async' library
+  package_url: https://pub.dartlang.org/async
+  version: 2.8.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-05-20 12:00:10.000000000 Z
+- name: build_runner
+  description: A build system for Dart code generation and modular compilation
+  package_url: https://pub.dartlang.org/build_runner
+  version: 2.1.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: build_version
+  description: A builder for extracting a package version into code
+  package_url: https://pub.dartlang.org/build_version
+  version: 2.0.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: dio
+  description: |-
+    A powerful HTTP networking package,
+    supports Interceptors,
+    Aborting and canceling a request,
+    Custom adapters
+  package_url: https://pub.dartlang.org/dio
+  version: 4.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-02-18 14:44:26.000000000 Z
+  vulnerabilities:
+  - name: dio vulnerable to CRLF injection with HTTP method string
+    cve_id: CVE-2021-31402
+    cve_url: https://github.com/advisories/GHSA-9324-jv53-9cc8
+    detected_date: Nov 9
+    severity: high
+    first_patched: 5.0.0
+  - name: 'Duplicate Advisory: Improper Neutralization of CRLF Sequences in dio'
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-jwpw-q68h-r678
+    detected_date: Nov 9
+    severity: high
+    first_patched: 5.0.0
+- name: filesize
+  description: A package to get humanized file sizes
+  package_url: https://pub.dartlang.org/filesize
+  version: 2.0.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: flutter
+  description: Visit flutter.io to get started
+  package_url: https://pub.dartlang.org/flutter
+  version: 0.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: flutter_hooks
+  description: A flutter implementation of React hooks
+  package_url: https://pub.dartlang.org/flutter_hooks
+  version: 0.17.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: flutter_spinkit
+  description: A collection of loading indicators animated with flutter
+  package_url: https://pub.dartlang.org/flutter_spinkit
+  version: 5.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: google_fonts
+  description: A Flutter package to use fonts from fonts.google.com
+  package_url: https://pub.dartlang.org/google_fonts
+  version: 2.1.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: hive
+  description: Lightweight and buzzing-fast key-value database made for Flutter and
+    Dart
+  package_url: https://pub.dartlang.org/hive
+  version: 2.0.4
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-04-24 10:13:55.000000000 Z
+- name: hive_flutter
+  description: Extension for Hive
+  package_url: https://pub.dartlang.org/hive_flutter
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: hive_generator
+  description: Extension for Hive
+  package_url: https://pub.dartlang.org/hive_generator
+  version: 1.1.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-04-24 10:13:55.000000000 Z
+- name: material_design_icons_flutter
+  description: The Material Design Icons designed by the community for Flutter
+  package_url: https://pub.dartlang.org/material_design_icons_flutter
+  version: 5.0.5955
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: oktoast
+  description: A pure flutter toast library
+  package_url: https://pub.dartlang.org/oktoast
+  version: 3.1.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-04-13 19:36:29.000000000 Z
+- name: open_file
+  description: A plug-in that can call native APP to open files with string result
+    in flutter
+  package_url: https://pub.dartlang.org/open_file
+  version: 3.2.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: path_provider
+  description: Flutter plugin for getting commonly used locations on host platform
+    file systems
+  package_url: https://pub.dartlang.org/path_provider
+  version: 2.0.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Aguilaair
+  last_updated_on: 2021-08-11 16:26:44.000000000 Z
+- name: pedantic
+  description: The Dart analyzer settings and best practices used internally at Google
+  package_url: https://pub.dartlang.org/pedantic
+  version: 1.11.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: pubspec_parse
+  description: Simple package for parsing pubspec.yaml files with a type-safe API
+    and rich error reporting
+  package_url: https://pub.dartlang.org/pubspec_parse
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: shared_preferences
+  description: Flutter plugin for reading and writing simple key-value pairs
+  package_url: https://pub.dartlang.org/shared_preferences
+  version: 2.0.6
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: Rebar Ahmad
+  last_updated_on: 2021-08-08 17:41:50.000000000 Z
+- name: url_launcher
+  description: Flutter plugin for launching a URL
+  package_url: https://pub.dartlang.org/url_launcher
+  version: 6.0.9
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-05-20 12:00:10.000000000 Z
+- name: watcher
+  description: A file system watcher
+  package_url: https://pub.dartlang.org/watcher
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.lock
+  detection_source: pubspec.yaml
+  last_updated_by: leoafarias
+  last_updated_on: 2021-05-20 12:00:10.000000000 Z
